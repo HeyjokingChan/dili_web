@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/dili_style.css">
+</head>
+<body>
+    <div class="categories">
+        <div class="categories_wrap">
+            <div class="categories_list">
+                <!--每一个甄选list项-->
+                <div class="list_group">
+                    <div class="list_group_img">
+                        <img src="../../images/categories/categories.jpg" alt="">
+                    </div>
+                    <div class="list_group_details font_fy">
+                        <div class="details_title light_black">3月篇 本月必买的好物</div>
+                        <div class="details_remark dark_gray">阳春3月，春季必备清单</div>
+                        <div class="details_price light_pink"><span>18</span><span>元起</span></div>
+                    </div>
+                </div>
+                <div class="list_group">
+                    <div class="list_group_img">
+                        <img src="../../images/categories/categories.jpg" alt="">
+                    </div>
+                    <div class="list_group_details font_fy">
+                        <div class="details_title light_black">3月篇 本月必买的好物</div>
+                        <div class="details_remark dark_gray">阳春3月，春季必备清单</div>
+                        <div class="details_price light_pink"><span>18</span><span>元起</span></div>
+                    </div>
+                </div>
+                <div class="list_group">
+                    <div class="list_group_img">
+                        <img src="../../images/categories/categories.jpg" alt="">
+                    </div>
+                    <div class="list_group_details font_fy">
+                        <div class="details_title light_black">3月篇 本月必买的好物</div>
+                        <div class="details_remark dark_gray">阳春3月，春季必备清单</div>
+                        <div class="details_price light_pink"><span>18</span><span>元起</span></div>
+                    </div>
+                </div>
+                <div class="list_group">
+                    <div class="list_group_img">
+                        <img src="../../images/categories/categories.jpg" alt="">
+                    </div>
+                    <div class="list_group_details font_fy">
+                        <div class="details_title light_black">3月篇 本月必买的好物</div>
+                        <div class="details_remark dark_gray">阳春3月，春季必备清单</div>
+                        <div class="details_price light_pink"><span>18</span><span>元起</span></div>
+                    </div>
+                </div>
+                <div class="list_group">
+                    <div class="list_group_img">
+                        <img src="../../images/categories/categories.jpg" alt="">
+                    </div>
+                    <div class="list_group_details font_fy">
+                        <div class="details_title light_black">3月篇 本月必买的好物</div>
+                        <div class="details_remark dark_gray">阳春3月，春季必备清单</div>
+                        <div class="details_price light_pink"><span>18</span><span>元起</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index_ftwrap" id="index_ftwrap">
+            <div class="footer">
+                <div class="footer_bar">
+                    <div class="footer_bar_wrap">
+                        <div class="tab_icon_wrap">
+                            <a href="#" class="js-tab">
+                                <div class="tab_icon ">
+                                    <div class="icons icons_home icons_selected"></div>
+                                </div>
+                                <div class="tab_name_item tab_name_item_selected">首页</div>
+                            </a>
+                            <a href="#" class="js-tab">
+                                <div class="tab_icon ">
+                                    <div class="icons icons_choice"></div>
+                                </div>
+                                <div class="tab_name_item">甄选</div>
+                            </a>
+                            <a href="#" class="js-tab">
+                                <div class="tab_icon ">
+                                    <div class="icons icons_shopping"></div>
+                                </div>
+                                <div class="tab_name_item">购物车</div>
+
+                            </a>
+                            <a href="#" class="js-tab">
+                                <div class="tab_icon ">
+                                    <div class="icons icons_mine"></div>
+                                </div>
+                                <div class="tab_name_item">我的</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a  class="back_top" id="back_top"><img src="../../images/top.png" alt="back"></a>
+    </div>
+</body>
+<script src="../../js/fontSize.js"></script>
+<script src="../../js/setFooterHeight.js"></script>
+<script src="../../js/jquery.js"></script>
+<script>
+    (function () {
+        $(document).ready(function () {
+//            回到顶部锚点设置
+            $(".back_top").hide();
+            var scrollTop=0;
+            window.onload=function(){
+                function adsorption(){
+                    window.onscroll=function(){
+                        scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+                        if(scrollTop>200){
+                            $(".back_top").fadeIn(500)
+                        }else{
+                            $(".back_top").fadeOut(500)
+                        }
+                    }
+                }
+                adsorption();
+            };
+//            点击锚点返回顶部
+            $(".back_top").click(function(){
+                $("html,body").animate({scrollTop:0}, 500);
+            });
+        })
+    })(jQuery)
+</script>
+</html>

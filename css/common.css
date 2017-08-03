@@ -1,0 +1,65 @@
+.d {
+    border: 1px solid #f00;
+}
+body{
+
+}
+.author_bd{
+    position: relative;
+}
+.container_wrapper {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+/*颜色样式*/
+
+.font_fy{
+    font-family: PingFangSC-Light,helvetica,'Heiti SC';
+}
+.dark_gray {
+    color: #888888;
+}
+
+.light_gray {
+    color: #dbdbdb;
+}
+
+.light_black {
+    color: #353535;
+}
+
+.orange_btn {
+    background-color: #fc0;
+}
+.orange_font{
+    color: #fc0;
+}
+.light_pink {
+    color: #fb5e8c;
+}
+
+.search_bg {
+    color: #e6e6e6;
+}
+.list_background{
+    background: #f4f4f4;
+}
+/*字体大小*/
+.fontsize_senior{
+    font-size: 0.368889rem;
+}
+.fontsize_secondary{
+    font-size: 0.324rem;
+}
+/*甄选详情部分价格整数字体大小*/
+.integer{
+    font-size: 0.58889rem;
+}
+.decimal{
+    font-size: 0.368889rem;
+}
+    /*margin*/
+.mart_text{
+    margin-top: 0.2076489533011272rem;
+}

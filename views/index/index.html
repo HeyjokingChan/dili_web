@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/dili_style.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+</head>
+
+<body>
+<div class="index">
+    <!--搜索导航-->
+    <div class="index_hdwrap " id="index_hdwrap">
+        <div class="dl_hd">
+            <div class="dl_topBar">
+                <div class="hd_bd">
+                    <a href="#" class="">
+                        <div class="bd_logo"></div>
+                    </a>
+                    <div class="bd_search">
+                        <div class="search_box">
+                            <div class="search_icon "></div>
+                            <input class="search_input d" placeholder="请输入商品名称">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--首页列表-->
+    <div class="dl_list_bd">
+        <div class="dl_grow">
+            <!--列表导航-->
+            <div class="grow_nav">
+                <a class="recommend " href="#">
+                    <div class="selected js-nav">推荐</div>
+                </a>
+                <a class="live " href="#">
+                    <div class="js-nav">居家</div>
+                </a>
+                <a class="clothes " href="#">
+                    <div class="js-nav">服饰</div>
+                </a>
+                <a class="care " href="#">
+                    <div class="js-nav">洗护</div>
+                </a>
+                <a class="technology " href="#">
+                    <div class="js-nav">科技</div>
+                </a>
+            </div>
+            <!--轮播图部分-->
+            <div class="grow_slider">
+                <div class=" swiper-container " id="js_container">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide" href=""><img src="../../images/banner/p.jpg" alt=""></a>
+                        <a class="swiper-slide" href=""><img src="../../images/banner/c.jpg" alt=""></a>
+                        <a class="swiper-slide" href=""><img src="../../images/banner/spring.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            <!--商品列表-->
+            <div class="grow_goodsList ">
+                <!--xx甄品列表(网格形式的列表)-->
+                <!--list_itembox代表一种甄品的列表-->
+                <!--网格模式列表--首发甄品-->
+                <div class="list_itembox list_itembox_grid">
+                    <div class="goodsList_title font_fy">
+                        <a href="#"><span>首发甄品</span></a>
+                    </div>
+                    <!--goodsList_content代表每一个列表的每一行-->
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <a class="summarybox summarybox_right">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <!--更多甄品-->
+                        <a class="summarybox summarybox_right summarybox_more">
+                            <div class="more_zp">
+                                <div class="p">更多XX甄品</div>
+                                <div class="more_icon_right"><img src="../../images/right.png" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--简单图文形式列表--甄选甄品-->
+                <div class="list_itembox list_itembox_image_text">
+                    <div class="goodsList_title font_fy">
+                        <a href="#"><span>甄选甄品</span></a>
+                    </div>
+                    <div class="image_text_content">
+                        <a class="imageText_image" href="#">
+                            <img src="../../images/goods/zxzp.jpg" alt="">
+                        </a>
+                        <div class="imageText_details">
+                            <div class="imageText_details_item imageText_details_price">
+                                <div class="font_fy light_black">新年礼盒首发</div>
+                                <div class="light_pink right"><span>¥</span><span>139</span><span>元起</span></div>
+                            </div>
+                            <div class="imageText_details_item imageText_details_from dark_gray">来自韩国制造（出处）</div>
+                        </div>
+                    </div>
+                </div>
+                <!--图文左右类型列表--人气甄品-->
+                <div class="list_itembox list_itembox_landr">
+                    <div class="goodsList_title goodsList_title_landr font_fy ">
+                        <a href="#"><span>人气甄品</span></a>
+                    </div>
+                    <div class="goodsList_content_column column_content">
+                        <div class="column_content_wrap">
+                            <a class="column_summary_image">
+                                <img src="../../images/goods/renqi.png" alt="">
+                                <div class="color_chose ">
+                                    <span>4</span>
+                                    <span>色</span>
+                                    <span>可</span>
+                                    <span>选</span>
+                                </div>
+                            </a>
+                            <a class="column_summary_text">
+                                <div class="text_details">
+                                    <div class="fontsize_senior light_black">日式多功能颈枕 针织款</div>
+                                    <div class="fontsize_secondary dark_gray mart_text">细腻天竺棉，亲肤舒适</div>
+                                    <div class="light_pink text_details_price font_fy fontsize_senior mart_text">
+                                        <span>¥</span><span>139</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="goodsList_content_column column_content">
+                        <div class="column_content_wrap">
+                            <a class="column_summary_image">
+                                <img src="../../images/goods/renqi.png" alt="">
+                                <div class="color_chose ">
+                                    <span>4</span>
+                                    <span>色</span>
+                                    <span>可</span>
+                                    <span>选</span>
+                                </div>
+                            </a>
+                            <a class="column_summary_text">
+                                <div class="text_details">
+                                    <div class="fontsize_senior light_black">日式多功能颈枕 针织款</div>
+                                    <div class="fontsize_secondary dark_gray mart_text">细腻天竺棉，亲肤舒适</div>
+                                    <div class="light_pink text_details_price font_fy fontsize_senior mart_text">
+                                        <span>¥</span><span>139</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_itembox list_itembox_grid">
+                    <div class="goodsList_title font_fy">
+                        <a href="#"><span>首发甄品</span></a>
+                    </div>
+                    <!--goodsList_content代表每一个列表的每一行-->
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <a class="summarybox summarybox_right">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <!--更多甄品-->
+                        <a class="summarybox summarybox_right summarybox_more">
+                            <div class="more_zp">
+                                <div class="p">更多XX甄品</div>
+                                <div class="more_icon_right"><img src="../../images/right.png" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="list_itembox list_itembox_grid">
+                    <div class="goodsList_title font_fy">
+                        <a href="#"><span>首发甄品</span></a>
+                    </div>
+                    <!--goodsList_content代表每一个列表的每一行-->
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <a class="summarybox summarybox_right">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <!--更多甄品-->
+                        <a class="summarybox summarybox_right summarybox_more">
+                            <div class="more_zp">
+                                <div class="p">更多XX甄品</div>
+                                <div class="more_icon_right"><img src="../../images/right.png" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="list_itembox list_itembox_grid">
+                    <div class="goodsList_title font_fy">
+                        <a href="#"><span>首发甄品</span></a>
+                    </div>
+                    <!--goodsList_content代表每一个列表的每一行-->
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <a class="summarybox summarybox_right">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="goodsList_content grid_content">
+                        <!--每行里每一个<a>代表一个网格-->
+                        <a class="summarybox summarybox_left">
+                            <div class="summary_image">
+                                <img src="../../images/goods/zt.png" alt="单品">
+                            </div>
+                            <div class="summary_details">
+                                <div class="details details_name light_black">升级款护颈加翼记忆枕</div>
+                                <div class="details details_price light_pink">
+                                    <span>¥</span><span>139</span>
+                                </div>
+                            </div>
+                            <div class="color_chose ">
+                                <span>4</span>
+                                <span>色</span>
+                                <span>可</span>
+                                <span>选</span>
+                            </div>
+                        </a>
+                        <!--更多甄品-->
+                        <a class="summarybox summarybox_right summarybox_more">
+                            <div class="more_zp">
+                                <div class="p">更多XX甄品</div>
+                                <div class="more_icon_right"><img src="../../images/right.png" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页底部导航-->
+    <div class="index_ftwrap" id="index_ftwrap">
+        <div class="footer">
+            <div class="footer_bar">
+                <div class="footer_bar_wrap">
+                    <div class="tab_icon_wrap">
+                        <a href="#" class="js-tab">
+                            <div class="tab_icon ">
+                                <div class="icons icons_home icons_selected"></div>
+                            </div>
+                            <div class="tab_name_item tab_name_item_selected">首页</div>
+                        </a>
+                        <a href="#" class="js-tab">
+                            <div class="tab_icon ">
+                                <div class="icons icons_choice"></div>
+                            </div>
+                            <div class="tab_name_item">甄选</div>
+                        </a>
+                        <a href="#" class="js-tab">
+                            <div class="tab_icon ">
+                                <div class="icons icons_shopping"></div>
+                            </div>
+                            <div class="tab_name_item">购物车</div>
+
+                        </a>
+                        <a href="#" class="js-tab">
+                            <div class="tab_icon ">
+                                <div class="icons icons_mine"></div>
+                            </div>
+                            <div class="tab_name_item">我的</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--回到顶部的锚点-->
+    <a class="back_top" id="back_top"><img src="../../images/top.png" alt="back"></a>
+</div>
+<script src="../../js/fontSize.js"></script>
+<script src="../../js/index.js"></script>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<!--<script src="../../js/setFooterHeight.js"></script>-->
+</body>
+<script>
+    (function () {
+        $(document).ready(function () {
+            // 点击导航切换样式
+            $(".js-nav").click(function () {
+                $(this).addClass("selected").removeClass("unselected").parent().siblings()
+                    .find(".js-nav").addClass("unselected").removeClass("selected")
+            });
+
+//            回到顶部锚点设置
+            $(".back_top").hide();
+            var scrollTop=0;
+            window.onload=function(){
+                function adsorption(){
+                    window.onscroll=function(){
+                        scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+                        if(scrollTop>200){
+                            $(".back_top").fadeIn(500)
+                        }else{
+                            $(".back_top").fadeOut(500)
+                        }
+                    }
+                }
+                adsorption();
+            };
+//            点击锚点返回顶部
+            $(".back_top").click(function(){
+                $("html,body").animate({scrollTop:0}, 500);
+            });
+        })
+    })(jQuery)
+</script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 5000,//可选选项，自动滑动
+        loop: true,
+        loopAdditionalSlides: 0,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+    })
+</script>
+</html>

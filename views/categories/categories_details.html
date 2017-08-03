@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/dili_style.css">
+</head>
+<body>
+<div class="categories_details">
+    <div class="categories_details_wrap">
+        <div class="categories_details_list">
+            <div class="title_img">
+                <img src="../../images/categories/march.jpg" alt="">
+            </div>
+            <div class="remark_img">
+                <img src="#" alt="远行">
+            </div>
+            <div class="categories_details_article">
+                <div class="article">赏花要趁早，一怕游人如织，二怕错过良辰。</div>
+                <div class="article">四月的机票和旅店通常都比较便宜，年假此时不用更待何时？</div>
+            </div>
+            <!--图文模式模块-->
+            <div class="good_group ">
+                <div class="good_group_items">
+                    <div class="items_img">
+                        <img src="../../images/categories/tx.png" alt="拖鞋">
+                    </div>
+                </div>
+                <div class="good_group_items">
+                    <div class="items_buy">
+                        <div class="items_buy_price font_fy">
+                            <span>¥</span>
+                            <!--整数部分--><!--小数点及小数点之后的数字-->
+                            <span class="integer">29<span class="decimal">.00</span></span>
+                        </div>
+                        <div class="items_buy_type fontsize_senior">日式和风便携式拖鞋</div>
+                        <div class="items_buy_func fontsize_secondary dark_gray">天竺棉面料柔然，麂皮底有静音效果。</div>
+                        <div class="items_buy_features fontsize_secondary dark_gray">对折后仅18X14大小，MUJI制造商出品。</div>
+                        <div class="items_buy_buybtn font_fy">
+                            <a href="#">立即购买﹥</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="good_group ">
+                <div class="good_group_items">
+                    <div class="items_img">
+                        <img src="../../images/categories/tx.png" alt="拖鞋">
+                    </div>
+                </div>
+                <div class="good_group_items">
+                    <div class="items_buy">
+                        <div class="items_buy_price font_fy">
+                            <span>¥</span>
+                            <!--整数部分--><!--小数点及小数点之后的数字-->
+                            <span class="integer">29<span class="decimal">.00</span></span>
+                        </div>
+                        <div class="items_buy_type fontsize_senior">日式和风便携式拖鞋</div>
+                        <div class="items_buy_func fontsize_secondary dark_gray">天竺棉面料柔然，麂皮底有静音效果。</div>
+                        <div class="items_buy_features fontsize_secondary dark_gray">对折后仅18X14大小，MUJI制造商出品。</div>
+                        <div class="items_buy_buybtn font_fy">
+                            <a href="#">立即购买﹥</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_img">
+                <img src="../../images/categories/march.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <a  class="back_top" id="back_top"><img src="../../images/top.png" alt="back"></a>
+</div>
+</body>
+<script src="../../js/fontSize.js"></script>
+<script src="../../js/jquery.js"></script>
+<script>
+    (function () {
+        $(document).ready(function () {
+//            回到顶部锚点设置
+            $(".back_top").hide();
+            var scrollTop=0;
+            window.onload=function(){
+                function adsorption(){
+                    window.onscroll=function(){
+                        scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+                        if(scrollTop>200){
+                            $(".back_top").fadeIn(500)
+                        }else{
+                            $(".back_top").fadeOut(500)
+                        }
+                    }
+                }
+                adsorption();
+            };
+//            点击锚点返回顶部
+            $(".back_top").click(function(){
+                $("html,body").animate({scrollTop:0}, 500);
+            });
+        })
+    })(jQuery)
+</script>
+</html>
